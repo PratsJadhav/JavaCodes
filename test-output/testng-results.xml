@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="137542" started-at="2018-05-15T10:22:22Z" finished-at="2018-05-15T10:24:39Z">
+  <suite name="Suite" duration-ms="19058" started-at="2018-05-15T11:45:25Z" finished-at="2018-05-15T11:45:44Z">
     <groups>
     </groups>
-    <test name="Regression 2" duration-ms="48985" started-at="2018-05-15T10:22:22Z" finished-at="2018-05-15T10:23:11Z">
+    <test name="Regression 2" duration-ms="17653" started-at="2018-05-15T11:45:25Z" finished-at="2018-05-15T11:45:43Z">
       <class name="GridParallel">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:GridParallel@5f341870]" name="beforeClass" duration-ms="48929" started-at="2018-05-15T15:52:22Z" finished-at="2018-05-15T15:53:11Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:GridParallel@5f341870]" name="beforeClass" duration-ms="17597" started-at="2018-05-15T17:15:25Z" finished-at="2018-05-15T17:15:43Z">
           <params>
             <param index="0">
               <value>
@@ -18,120 +18,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:GridParallel@5f341870]" name="afterClass" is-config="true" duration-ms="2" started-at="2018-05-15T15:53:11Z" finished-at="2018-05-15T15:53:11Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:GridParallel@5f341870]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-05-15T17:15:43Z" finished-at="2018-05-15T17:15:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- GridParallel -->
     </test> <!-- Regression 2 -->
-    <test name="Regression 1" duration-ms="137542" started-at="2018-05-15T10:22:22Z" finished-at="2018-05-15T10:24:39Z">
+    <test name="Regression 3" duration-ms="18453" started-at="2018-05-15T11:45:25Z" finished-at="2018-05-15T11:45:44Z">
       <class name="GridParallel">
-        <test-method status="FAIL" signature="beforeClass(java.lang.String)[pri:0, instance:GridParallel@6f7fd0e6]" name="beforeClass" duration-ms="137492" started-at="2018-05-15T15:52:22Z" finished-at="2018-05-15T15:54:39Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:GridParallel@402a079c]" name="beforeClass" duration-ms="18405" started-at="2018-05-15T17:15:25Z" finished-at="2018-05-15T17:15:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Session [null] not available and is not among the last 1000 terminated sessions.
-Active sessions are[ext. key a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, ext. key e91e40239d5ff20d081e27408952f3ac]
-Command duration or timeout: 41 milliseconds
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: 'H5', ip: '10.26.41.70', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{capabilities={moz:profile=C:\Users\Admin\AppData\Local\Temp\rust_mozprofile.TnuvzWWj9QUS, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, specificationLevel=0, moz:accessibilityChecks=false, webdriver.remote.sessionid=a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=11204, browserName=firefox, platformName=windows_nt}, sessionId=a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, platform=ANY}]
-Session ID: null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session [null] not available and is not among the last 1000 terminated sessions.
-Active sessions are[ext. key a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, ext. key e91e40239d5ff20d081e27408952f3ac]
-Command duration or timeout: 41 milliseconds
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: 'H5', ip: '10.26.41.70', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{capabilities={moz:profile=C:\Users\Admin\AppData\Local\Temp\rust_mozprofile.TnuvzWWj9QUS, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, specificationLevel=0, moz:accessibilityChecks=false, webdriver.remote.sessionid=a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=11204, browserName=firefox, platformName=windows_nt}, sessionId=a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, platform=ANY}]
-Session ID: null
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at GridParallel.beforeClass(GridParallel.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: Session [null] not available and is not among the last 1000 terminated sessions.
-Active sessions are[ext. key a1eafd79-77fc-4d3f-acf0-1e4a0347c80b, ext. key e91e40239d5ff20d081e27408952f3ac]
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: 'H5', ip: '10.26.41.70', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:120)
-	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:380)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
-	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	... 1 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:GridParallel@6f7fd0e6]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-15T15:54:39Z" finished-at="2018-05-15T15:54:39Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:GridParallel@402a079c]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-05-15T17:15:44Z" finished-at="2018-05-15T17:15:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- GridParallel -->
+    </test> <!-- Regression 3 -->
+    <test name="Regression 1" duration-ms="19058" started-at="2018-05-15T11:45:25Z" finished-at="2018-05-15T11:45:44Z">
+      <class name="GridParallel">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:GridParallel@6f7fd0e6]" name="beforeClass" duration-ms="19009" started-at="2018-05-15T17:15:25Z" finished-at="2018-05-15T17:15:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:GridParallel@6f7fd0e6]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-15T17:15:44Z" finished-at="2018-05-15T17:15:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

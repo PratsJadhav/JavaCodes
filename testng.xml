@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel ="tests">
   <test thread-count="5" name="Regression 1">
-  <parameter name = "browser" value ="firefox"/>
+  <parameter name = "browser" value ="chrome"/>
   <classes>
   <class name = "GridParallel" />
   
@@ -16,4 +16,13 @@
   
   </classes>
   </test> <!-- Test -->
+
+<test thread-count="5" name="Regression 3">
+  <parameter name ="browser" value = "chrome"/>
+  <classes>
+  <class name = "GridParallel" />
+  
+  </classes>
+  </test> <!-- Test -->
+
 </suite> <!-- Suite -->
