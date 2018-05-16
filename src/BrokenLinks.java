@@ -14,9 +14,9 @@ public class BrokenLinks {
 
 	public static void main(String args[]) throws MalformedURLException, IOException
 	{
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver; 
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		
+		driver = new ChromeDriver();
 		driver.get("https://www.guru99.com/");
 		List<WebElement> ele = driver.findElements(By.tagName("a"));
 		Iterator<WebElement> iterator = ele.iterator();
@@ -34,7 +34,8 @@ public class BrokenLinks {
 				System.out.println("url not set....");
 				continue;
 			}
-			
+			try
+			{
 			huc = (HttpURLConnection) new URL(url).openConnection();
 			huc.setRequestMethod("HEAD");
 			huc.connect();
@@ -44,6 +45,10 @@ public class BrokenLinks {
 				System.out.println(url+" is broken...");
 			else
 				System.out.println(url +" is valid");
+			}catch(Exception e)
+			{
+				System.out.println(""+e.getMessage());
+			}
 		}
 	}
 }
